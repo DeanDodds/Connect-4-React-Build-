@@ -1,0 +1,24 @@
+
+.logo-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.logo-yellow-circle {
+  background-color: #fcc770;
+}
+
+.logo-red-circle {
+    background-color: #ff0000;
+} 
+
+.logo-yellow-circle ,
+.logo-red-circle {
+  width: 1.5rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  justify-self: center;
+  box-shadow: 0px 5px 0 #000000;
+  border: 3px solid #000000;
+}
