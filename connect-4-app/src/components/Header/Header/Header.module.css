@@ -1,5 +1,5 @@
 header{
-    padding: 2rem 2rem;
+    padding: 2rem 0rem;
     margin: 0 auto;
     max-width: 1000px;
 }
@@ -11,4 +11,9 @@ header{
     margin: 0 auto;
     gap: 1rem;
     width: 100%;
+}
+
+
+@media (width >= 48rem) { 
+    header{padding: 2rem 2rem;}
 }
