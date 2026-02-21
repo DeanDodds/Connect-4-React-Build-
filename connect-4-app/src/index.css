@@ -57,6 +57,44 @@ button:focus-visible {
   margin: 0 auto; 
 }
 
+.game-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+#game-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+#game-container .player:first-child .player-image-container {
+    left: -1.8rem;
+    background-color: #ff0000;
+}
+
+#game-container .player:first-child .player-image-container img{
+    transform: scaleX(-1);
+}
+
+#game-container .player:last-child .player-image-container{
+    right: -2.8rem;
+    background-color: #fcc770;
+}
+
+@media (width >= 64rem) { 
+  #game-container .player:first-child .player-image-container {
+      top: -1.8rem;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+
+  #game-container .player:last-child .player-image-container{
+    top: -1.8rem;
+    right: 40%;
+    transform: translateX(50%);
+  }
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
