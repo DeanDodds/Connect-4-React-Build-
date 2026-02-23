@@ -2,6 +2,7 @@ import './App.css'
 import Header from './components/Header/Header/Header'
 import Players from './components/Players/Players'
 import Gameboard from './components/Gameboard/Gameboard'
+import Timer from './components/Timer/Timer'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Gameboard/>
       <Players/>
     </div>
+    <Timer/>
     </>
   )
 }

@@ -1,0 +1,77 @@
+.timer {
+  position: relative;
+  width: 220px;
+  margin: 2rem auto 0;
+}
+
+/* Outer black "roof" border */
+.timer::before {
+    content: "";
+    position: absolute;
+    top: -49px;
+    left: 0px;
+    width: 0;
+    height: 0;
+    border-left: 110px solid transparent;
+    border-right: 110px solid transparent;
+    border-bottom: 64px solid #000000;
+}
+
+/* Inner pink "roof" fill */
+.timer::after {
+    content: "";
+    position: absolute;
+    top: -45px;
+    left: 10px;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 60px solid #ff4d4d;
+}
+
+/* Main timer body */
+.body {
+  width: 220px;
+  min-height: 130px;
+  background-color: #ff4d4d;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+
+  border-radius: 32px;
+  box-shadow: 0px 8px 0 #000000;
+  border: 4px solid #000000;
+}
+
+.label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+}
+
+.time {
+  font-size: 2.7rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.bottom-border-div {
+    height: 350px;
+    width: 100%;
+    background-color: #5c2cd5;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    margin-top: -210px;
+}
+
+@media (width >= 64rem) {
+    .body {
+        margin-top: -40px;
+    }
+}

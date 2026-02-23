@@ -5,10 +5,10 @@ export default function Gameboard() {
   [null, null, null, null, null, null, null], 
   [null, null, null, null, null, null, null],
   [null, null, null, null, null, null, null],
-  [null, null, null, null, null, null, 'yellow'],
+  [null, null, null, null, null, null, null],
   [null, null, null, null, null, null, null],
   [null, null, null, null, null, null, null],  
-  [null, null, null, null, null, null, 'red']  
+  [null, null, null, null, null, null, null]  
 ]
   
   return (
